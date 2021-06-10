@@ -11,6 +11,11 @@ body {
 .color-pink {
   color: lightpink; 
 }
+
+.sub-title{
+  font-size: 32px;
+}
+
 /*
 *headerのスタイルシート
 */
@@ -42,13 +47,13 @@ body {
 */
 
 .item-list {
-  width: 80px;
+  width: 100%;
   max-width: 348px;
   margin: 0 auto;
 }
 
 .item-list b {
-  display: black;
+  display: block;
   font-size: 24px;
   font-weight: normal;
   margin: 20px 0 30px;
@@ -62,7 +67,7 @@ body {
 
 .icon-list {
   list-style: none;
-  width: 75%;
+  width: 100%;
   max-width: 247px;
   margin: 30px auto;
   padding: 0;
@@ -148,4 +153,87 @@ body {
   text-align: center;
   font-size: 15px;
   margin: 50px 0 20px;
+}
+
+/*
+*タブレット用スタイルシート
+*/
+/*
+@media screen and (max-width: 767px) {
+}
+*/
+
+/*
+*スマホ用スタイルシート
+*/
+
+@media screen and (max-width: 488px) {
+  body {
+    min-width: 100%;
+  }
+
+  /*
+  *ヘッダーのスタイルシート
+  */
+  .block-header {
+    padding: 0 10px 10px;
+    box-shadow: 0 8px 8px -5px rgba(204, 204, 204, 0.3);
+  }
+  
+  .block-header a {
+    font-size: 31px;
+  }
+
+/*
+*mainのスタイルシート
+*/
+.block-main {
+  text-align: center;
+  margin: 10px;
+}
+
+/*
+*profileのスタイルシート
+*/
+
+  .box-profile {
+    padding: 0 10px;
+  }
+  .item-list {
+    max-width: 100%;
+  }
+
+  .item-list b {
+    font-size: 10px;
+  }
+  .icon-list {
+    max-width: 100%;
+  }
+  .icon-list li {
+    margin-right: 25px;
+  }
+
+  /*
+  *worksのスタイルシート
+  */
+  .box-works {
+    margin: 60px 0 0;
+    padding: 0 10px;
+  }
+  .works-list {
+    max-width: 100%;
+  }
+  .works-list li {
+    max-width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .works-list h3 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .works-list span {
+    font-size: 14px;
+  }
 }
