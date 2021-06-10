@@ -78,3 +78,32 @@ body {
 .icon-list li:last-child {
   margin-right: 0;
 }
+
+/*
+* worksのスタイルシート
+*/
+
+.box-works {
+  margin: 80px 0;
+}
+
+.works-list {
+  list-style: none;
+  width: 100%;
+  max-width: 1076px;
+  margin: 30px auto;
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+}
+
+.works-list li {
+  display: black;
+  width: 100%;
+  max-width: 340px;
+}
+
+.works-list li img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
